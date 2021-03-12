@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="eng">
+ <head>
+   <meta charset="UTF-8">
+   <title>Import/Export</title>
+<link rel="icon" type="image/png" href="logo.png"/>
+<link rel="stylesheet" href="Style.css">
+<!-- HEAD -->
+</head>
+<!-- BODY -->
+    <body>
+            <!-- FIRST DIV -->
+        <div id="heading">
+            <!-- BADGE -->
+            <img class="sidebadge" src="badge.png" alt="Blender-logo"/>
+            <!-- TILE1 -->
+            <h1 class="title1">GSOC Proposal 2021</h1>
+            <!-- TITLE2 -->
+            <h1 class="title2">Interoperability | Fast Import / Export for selected formats</h1>
+        </div>
+        <!-- FIRST DIV COMPLETED -->
+
+
+        <!-- INFO DIV STARTED -->
+        <div id="info">
+            <!-- NAME -->
+            <h2 class="smallhead">Name</h2>
+            <p>GALI RAVI PRAVEEN</p>
+            <!-- CONTACT  -->
+            <h2 class="smallhead">Contact</h2>
+            <p>Gmail: <a class="links" href="https://mail.google.com/mail/?view=cm&fs=1&to=grpnpraveen@gmail.com&su=SUBJECT&body=BODY" target="_blanked">grpnpraveen@gmail.com</a></p>
+            <p>@grpnpraveen on <a class="links" href="https://devtalk.blender.org/u/grpnpraveen" target="_blank">devtalk</a>,<a class="links" href="https://developer.blender.org/p/grpnpraveen/" target="_blank">developer.blender.org</a>,<a class="links" href="https://blender.community/u/grpnpraveen" target="_blank">Blender.Community</a> and <a class="links" href="https://blender.chat/home" target="_blank">blender.chat</a></p>
+            <p>Github:  <a class="links" href="https://github.com/grpnpraveen" target="_blank">https://github.com/grpnpraveen</a></p>
+            <p>Gumroad:  <a class="links" href="https://gumroad.com/grpnpraveen" target="_blank">Gali_Ravi_Praveen</a></p>
+            <!-- SYNOPSIS -->
+            <h2 class="smallhead">Synopsis</h2>
+            <p class="paragraph">The main goal of this project is to make blender fast when it comes to exporting or importing 3d objects into the viewport making C modules for python. At present, it consumes more time for large objects such as models which consists of millions of vertices, the python importers and exporters can take a long time when compared to the C module for the same because python is an interpreted language which results in more CPU instructions.This project mainly focuses on STL and PLY formats primarily, which motivates to convert other format's converters modules to C in future.</p>
+            <!-- BENEFITS -->
+            <h2 class="smallhead">Benefits</h2>
+            <p class="paragraph">At this stage, blender takes a lot of time to export or import huge models due to an interpreted language(python modules). The C module will speedup import and export time, which makes the user experience smooth and fast. It enables users to export or import more objects without any huge delay, also the baseline model systems can easily handle this in less time comparing with python modules.</p>
+            <!-- DELIVERABLES -->
+            <h2 class="smallhead">Deliverables</h2>
+             <p class="paragraph"><a class="points">⁍</a>  Not only working importers and exporters of STL and PLY but fast.</p>
+            <p class="paragraph"><a class="points">⁍</a>  Also documentation of the performance of these features.</p>
+            <p class="paragraph"><a class="points">⁍</a>  No additional documentation needed for users as these are present already.</p>
+            <!-- PROJECT DETAILS -->
+            <h2 class="smallhead">Project Details</h2>
+            <p class="paragraph">First, need to write some modules for python in C to read or write STL(Standard Tessellation Language) and PLY(Polygon File Format) file formats. Starting with PLY format makes this project easy as there are some libraries in C available but the tricky part is to convert them into a module for python using Python API. After that happens,STL can be done by following similar steps as PLY but making some changes along the path. The final part is importing these modules into python and testing.</p>
+            <!-- PROJECT SCHEDULE -->
+            <h2 class="smallhead">Project Schedule</h2>
+            <h3 class="littlehead">May</h3>
+            <p class="paragraph">As I already do have approximately six months of bonding with Blender-dev, I can utilize this time to research more on how to reduce the read and write time complexity of the code along with little bonding especially with mentors.</p>
+            <h3 class="littlehead">June</h3>
+            <p class="paragraph"><a class="points">⁍</a>  To write a C program to read and write PLY file or converting the existing library to C module for python.</p>
+            <p class="paragraph"><a class="points">⁍</a>  Begining to write a code to read and write STL in C.</p>
+            <h3 class="littlehead">July</h3>
+            <p class="paragraph"><a class="points">⁍</a>   If there is any pending work of June will be completed in July.</p>
+            <p class="paragraph"><a class="points">⁍</a>   Converting this STL read and write C program into module for python.</p>
+            <h3 class="littlehead">August</h3>
+            <p class="paragraph"><a class="points">⁍</a>   If there is any pending work of July will be done before the 8th/9th of this month.</p>
+            <p class="paragraph"><a class="points">⁍</a>   Finally importing C modules to python and testing once again(as testing will be done in each process).</p>
+
+
+
+
+            <!-- BIOGRAPHY -->
+            <h2 class="smallhead">Biography</h2>
+            <p class="paragraph">I am Gali Ravi Praveen, a sophomore undergraduate student majoring in computer science and engineering from BML Munjal University, India. I was introduced to C when I was in my first year of engineering and then gradually I learned other languages as well like python, java, js, PHP, etc. Currently, as a vice-president of the Robotis club in our University my knowledge of C programming has increased a lot.
+            I did several projects in C and Python(<a class="links" href="https://github.com/grpnpraveen" target="_blank">github_link</a>). Apart from this, I am familiar with blender for 3 years and as a blender-dev for approximately 6 months, I also have some exposer to Blender Python API with which two addons were made for blender in python. One is a temporary solution for the grease pencil shadow issue(<a class="links" href="https://developer.blender.org/T85183" target="_blank">T85183</a>) and the other(<a class="links" href="https://developer.blender.org/T84348" target="_blank">T84348</a>) is an add-on that helps to attach texture maps to the object along with an extra feature that generates real-time displacement in Eevee similar to cycles. I made several tutorials and videos of blender on <a class="links" href="https://www.youtube.com/channel/UCvMXLm47z6agAc19Db-18Hg/videos" target="_blank">youtube</a> as well which helps others to understand modeling and animation. Using blender along with unity I made some 2D games as well one of which <a class="links" href="https://github.com/grpnpraveen/Stroop_Game" target="_blank">Stroop_play</a>.</p>
+           
+            
+
+        </div>
+         <!-- INFO DIV ENDED -->
+        
+    </body>
+</html>
