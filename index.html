@@ -58,19 +58,19 @@
 
             <!-- PROJECT DETAILS -->
             <h2 class="smallhead">Project Details</h2>
-            <p class="paragraph">This project requires basic knowledge about Rigid body Dynamics to understand the behaviour of the Rigid body while the forces acting on it. Some of which plays a crucial role are Gravity, Friction and other external forces in the viewport.</p>
+            <p class="paragraph">This project requires basic knowledge of Rigid body Dynamics to understand the behaviour of the Rigid body while the forces acting on it. Some of which plays a crucial role are Gravity, Friction and other external forces in the viewport.</p>
             <h3 class="littlehead">Path of the Rigid body and Collisions </h3>
-            <p class="paragraph">Every Object inside Blender has its origin that is the centre of that object. Assuming this origin as the main object, it's travel path can be displayed in the viewport using the Rigid body data and GLSL. In addition to this, collision spots, where the body will collide with other Rigid body, can be highlighted along this path.</p>
+            <p class="paragraph">Every Object inside Blender has its origin that is the centre of that object. Assuming this origin as the main object, it's travel path can be displayed in the viewport using the Rigid body data and GLSL. In addition to this, collision spots where the body will collide with other Rigid body can be highlighted along this path.</p>
             <h3 class="littlehead">Friction</h3>
-            <p class="paragraph">If a Rigid body is in contact with another Rigid body then there will be an opposing force that acts in the opposite direction of its motion, called Frictional Force. As friction is already an attribute to the Rigid body in blender, using that data of both the objects, a vector can be drawn showing Frictional Force(both Static and Kinetic) with the direction and its magnitude in the viewport.</p>
+            <p class="paragraph">If a Rigid body is in contact with another Rigid body then there will be an opposing force that acts in the opposite direction of its motion, called Frictional Force. As friction is already an attribute to the Rigid body properties in blender, this data will be helpful to draw a vector showing Frictional Force(both Static and Kinetic) with the direction and its magnitude in the viewport.</p>
             <h3 class="littlehead">Gravitational Force</h3>
             <p class="paragraph">Gravity is the main field of force that plays a key role in Rigid body Dynamics. This force is also an attribute in the Rigid body World properties under Field Weights. Using this data and mass of the Rigid body, Gravitational force can be calculated and displayed in the viewport along with the direction.</p>
             <h3 class="littlehead">Normal Force</h3>
-            <p class="paragraph">If we know the g-value(gravitational constant) and the mass of the body then we can calculate the Normal Force. In some rare cases, if the object is inclined on the wedge-like thing then need to calculate the angle of inclination and need to apply some trigonometry laws to find both Normal and the gravitational force and their directions.</p>
+            <p class="paragraph">If we know the g-value(gravitational constant) and the mass of the body then we can calculate the Normal Force. In some rare cases, if the object is inclined on the wedge-like thing then need to calculate the angle of inclination and need to apply some trigonometric laws to find both Normal and the gravitational force and their directions.</p>
             <h3 class="littlehead">Collision Margin</h3>
             <p class="paragraph">To collide two objects in Blender there is an important attribute, which decides the collision point between them, in Rigid body settings under sensitivity called Collision Margin. By using this data a virtual border can be visualized to make the user understand where the actual collision happens between them.</p>
             <h3 class="littlehead">Velocity and Angular Velocity</h3>
-            <p class="paragraph">The main vector property of any Rigid body, while it is in motion (translational or rotational), its velocity. Velocity can be visualized along with the direction in the viewport using the velocity data from the velocity attribute under the deactivation section in Rigid body settings, which calculates the Rigid body's velocity in the background.</p>
+            <p class="paragraph">The main vector property of any Rigid body, while it is in motion (translational or rotational), is its velocity. Velocity can be visualized along with the direction in the viewport using the velocity data from the velocity attribute under the deactivation section in Rigid body settings, which calculates the Rigid body's velocity in the background.</p>
            
 
 
@@ -99,7 +99,7 @@
             <h3 class="littlelittlehead">Week 11-12:</h3>
             <p class="paragraph">Data need to be collected from the deactivation section under Dynamics inside  Rigid body properties where both linear and angular velocity were calculated. Using this data GLSL program will be written to display the direction and magnitude of the velocity of the object.</p>
             <h3 class="littlelittlehead">Week 13:</h3>
-            <p class="paragraph">The ideas which were suggested by the community will be implemented this week. If not, Final Evaluation.</p>
+            <p class="paragraph">The ideas which were suggested by the community will be implemented this week. If not,  adding a similar UI for Cloth Simulation.</p>
 
 
 
