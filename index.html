@@ -48,7 +48,7 @@
             <h2 class="smallhead">Deliverables</h2>
             <p class="paragraph"><a class="points">⁍</a> 
                 A UI panel under Rigid body Physics Properties in the Properties Menu to control the visualization. </p>
-             <p class="paragraph"><a class="points">⁍</a>  Different types of visualization data of Rigid body in the viewport, like Path of the Rigid body along with collision spots, Friction, Gravity, Normal Force, viscous Drag, Velocity/Angular Velocity and Torque/Force and Collision Margin.  </p>
+             <p class="paragraph"><a class="points">⁍</a>  Different types of visualization data of Rigid body in the viewport, like Path of the Rigid body along with collision spots, Friction, Gravity, Normal Force, Velocity/Angular Velocity and Collision Margin.  </p>
             <p class="paragraph"><a class="points">⁍</a> If possible similar UI and visualization for the Cloth simulation in this GSOC project. If not, I will continue this even after the GSOC period for the cloth simulation.</p>
             <h3 class="littlehead">Documentation</h3>
             <p class="paragraph"><a class="points">⁍</a> 
@@ -72,27 +72,40 @@
             <h3 class="littlehead">Velocity and Angular Velocity</h3>
             <p class="paragraph">The main vector property of any Rigid body, while it is in motion (translational or rotational), its velocity. Velocity can be visualized along with the direction in the viewport using the velocity data from the velocity attribute under the deactivation section in Rigid body settings, which calculates the Rigid body's velocity in the background.</p>
            
+
+
+
+
+
             <!-- PROJECT SCHEDULE -->
             <h2 class="smallhead">Project Schedule</h2>
             <h3 class="littlehead">May</h3>
-            <p class="paragraph">As I already do have approximately six months of bonding with Blender-dev, I can utilize this time to research more on how to reduce the read and write time complexity of the code along with little bonding especially with mentors.</p>
-            <h3 class="littlehead">June</h3>
-            <p class="paragraph"><a class="points">⁍</a>  To write a C program to read and write PLY file or converting the existing library to C module for python.</p>
-            <p class="paragraph"><a class="points">⁍</a>  Begining to write a code to read and write STL in C.</p>
-            <h3 class="littlehead">July</h3>
-            <p class="paragraph"><a class="points">⁍</a>   If there is any pending work of June will be completed in July.</p>
-            <p class="paragraph"><a class="points">⁍</a>   Converting this STL read and write C program into module for python.</p>
-            <h3 class="littlehead">August</h3>
-            <p class="paragraph"><a class="points">⁍</a>   If there is any pending work of July will be done before the 8th/9th of this month.</p>
-            <p class="paragraph"><a class="points">⁍</a>   Finally importing C modules to python and testing once again(as testing will be done in each process).</p>
-
+            <h3 class="littlelittlehead">Week 1-2:</h3>
+            <p class="paragraph">As I already have approximately six months of bonding with Blender-dev, I can utilize this period to gather some more ideas from Blender Community using Blender.Community and other social media platforms. The week's work starts with making a UI panel named  Viewport Display, under Rigid body settings in Physics Properties with only option Collision Margin, which displays the collision boundary around mesh using Collision Margin value under Sensitivity properties. Doing this work will let me know the entire pipeline (Python, RNA, C++ and GLSL). This week's work also involves writing a shader code to visualize the boundary around the mesh/object representing the Collision Margin.</p>
+            <h3 class="littlehead">JUNE</h3>
+            <h3 class="littlelittlehead">Week 3-4:</h3>
+            <p class="paragraph">Add an option to select the display colour of the boundary, representing Collision Margin, around the mesh and collect the data of the centre of the rigid body along with collision spots and displaying this data in the viewport. Also, an option(bool type) under viewport Display as Path(or any suggested name) to enable or disable.</p>
+            <h3 class="littlelittlehead">Week 5:</h3>
+            <p class="paragraph">If any of the previous tasks remained, this week acts as a buffer. If not, then the work continues.</p>
+            <h3 class="littlehead">JUNE & JULY</h3>
+            <h3 class="littlelittlehead">Week 6-7:</h3>
+            <p class="paragraph">Fetching the values of the Gravitational constant and mass of the rigid body to calculate the weight can help to calculate both Gravitational and Normal Force depending on the contact of the other object. For instance, if the object is resting on the wedge-like object then the Normal force will be "mg" multiplied by "cos(theta)" and the direction is perpendicular to the wedge. Adding two more options in UI, to display the Gravitational and Normal Force data along with direction and magnitude. </p>
+            <h3 class="littlehead">JULY</h3>
+            <h3 class="littlelittlehead">Week 8-9:</h3>
+            <p class="paragraph">First Evaluation will happen this week. Any corrections required then, I will work on them. If not, I will be working on the friction part.</p>
+            <h3 class="littlelittlehead">Week 9-10:</h3>
+            <p class="paragraph">Collecting required data from objects like friction value can help to calculate both static and kinetic friction values. GLSL code to display the data in the viewport. Adding options to UI to select the direction and magnitude.</p>
+            <h3 class="littlehead">AUGUST</h3>
+            <h3 class="littlelittlehead">Week 11-12:</h3>
+            <p class="paragraph">Data need to be collected from the deactivation section under Dynamics inside  Rigid body properties where both linear and angular velocity were calculated. Using this data GLSL program will be written to display the direction and magnitude of the velocity of the object.</p>
+            <h3 class="littlelittlehead">Week 13:</h3>
+            <p class="paragraph">The ideas which were suggested by the community will be implemented this week. If not, Final Evaluation.</p>
 
 
 
             <!-- BIOGRAPHY -->
             <h2 class="smallhead">Biography</h2>
-            <p class="paragraph">I am Gali Ravi Praveen, a sophomore undergraduate student majoring in computer science and engineering from BML Munjal University, India. I was introduced to C when I was in my first year of engineering and then gradually I learned other languages as well like python, java, js, PHP etc. Currently as a vice-president of the Robotis club in the University, my knowledge of C programming has increased a lot.
-            I did several projects in C and Python(<a class="links" href="https://github.com/grpnpraveen" target="_blank">github_link</a>). Apart from this, I am familiar with blender for 3 years and as a blender-dev for approximately 6 months.I also have some exposure to Blender Python API with which two addons were made for blender. One is a temporary solution for the grease pencil shadows issue(<a class="links" href="https://developer.blender.org/T85183" target="_blank">T85183</a>) and the other(<a class="links" href="https://developer.blender.org/T84348" target="_blank">T84348</a>) is an add-on that helps to attach texture maps to the object along with an extra feature that generates real-time displacement in Eevee similar to cycles. I made several tutorials and videos of blender on <a class="links" href="https://www.youtube.com/channel/UCvMXLm47z6agAc19Db-18Hg/videos" target="_blank">youtube</a> which helps others to understand modeling and animation. Using blender and unity I made some 2D games,one of which <a class="links" href="https://github.com/grpnpraveen/Stroop_Game" target="_blank">Stroop_play</a>.</p>
+            <p class="paragraph">I am Gali Ravi Praveen, a sophomore undergraduate student majoring in computer science and engineering from BML Munjal University, India. I was introduced to C when I was in my first year of engineering and then gradually learned other languages like C++, python, java, js, PHP and recently OpenGL. As a vice-president of the Robotis club in the University, my knowledge of C and C++ programming has increased and I am very proficient in these languages. I did some games in C, C++ and a project in Python(<a class="links" href="https://github.com/grpnpraveen" target="_blank">github_link</a>).Apart from studies, I am a big lover of movies especially animated like Ratatouille, Big Hero 6, Kungfu Panda, Insideout and others. I am familiar with blender for 3 years and as blender-dev for approximately 6 months. I also have some exposure to Blender Python API with which two addons were made for blender by me. One is a temporary solution for the grease pencil shadows issue(<a class="links" href="https://developer.blender.org/T85183" target="_blank">T85183</a>) and the other(<a class="links" href="https://developer.blender.org/T84348" target="_blank">T84348</a>)is an add-on that helps to attach texture maps to the object along with an extra feature that generates real-time displacement in Eevee similar to cycles. I made several tutorials and videos of blender on <a class="links" href="https://www.youtube.com/channel/UCvMXLm47z6agAc19Db-18Hg/videos" target="_blank">youtube</a> which helps others to understand modeling and animation. Using blender and unity, I made some 2D games one of which <a class="links" href="https://github.com/grpnpraveen/Stroop_Game" target="_blank">Stroop_play</a>.</p>
            
             
 
