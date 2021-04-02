@@ -1,6 +1,6 @@
 body{
     
-    background-color: #000000d8;
+    background-color:rgba(240, 248, 255, 0.836) ;
     font-size: large;
     /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     font-family: 'Times New Roman', Times, serif;
@@ -24,10 +24,10 @@ body{
     margin-left:40px;
 }
 #info .smallhead{
-    color:rgba(255, 127, 80, 0.952);
+    color:rgb(255, 127, 80);
 }
 #info .littlehead{
-    color: #ffbb00d5;
+    color: #3587da;
     
 }
 #info .littlelittlehead{
@@ -35,14 +35,14 @@ body{
     font-size:large;
 }
 #info .links{
-    color:rgba(127, 255, 212, 0.801);
+    color:rgb(0, 183, 255);
     text-decoration: dotted;
 }
 #info .links:hover{
     color: rgb(238, 100, 76);
 }
 p{
-    color: rgba(240, 248, 255, 0.836);
+    color: #000000d8;
 }
 
 #info .paragraph{
@@ -51,9 +51,9 @@ p{
 #info .points{
     color: #3587da;
 }
-
-
-
+#info .ref{
+    color: #3587da;
+}
 
 
 
